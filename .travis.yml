@@ -1,3 +1,4 @@
 language: php
 phps:
   - 5.3
+script: sh runner.sh
