@@ -28,4 +28,4 @@ PHPで初めてテストを書く目的で作りました。
 
 また、テスト実行サービスのTravis-CIを利用しています。
 
-* [toriimiyukki/RockPaperScissor](http://travis-ci.org/#!/toriimiyukki/RockPaperScissor/)
+* [toriimiyukki/RockPaperScissor](http://travis-ci.org/toriimiyukki/RockPaperScissor)
