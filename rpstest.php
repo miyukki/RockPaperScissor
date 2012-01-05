@@ -37,7 +37,7 @@ $t->is($rps->judge(), 1,'judgeの利用-payer:rock computer:scissor');
 
 $rps->setPlayerHand($rps->HANDS[1]);
 $rps->setComputerHand($rps->HANDS[0]);
-$t->is($rps->judge(), 0,'judgeの利用-payer:paper computer:rock');
+$t->is($rps->judge(), 1,'judgeの利用-payer:paper computer:rock');
 $rps->setPlayerHand($rps->HANDS[1]);
 $rps->setComputerHand($rps->HANDS[1]);
 $t->is($rps->judge(), 0,'judgeの利用-payer:paper computer:paper');
@@ -54,4 +54,8 @@ $t->is($rps->judge(), 1,'judgeの利用-payer:scissor computer:paper');
 $rps->setPlayerHand($rps->HANDS[2]);
 $rps->setComputerHand($rps->HANDS[2]);
 $t->is($rps->judge(), 0,'judgeの利用-payer:scissor computer:scissor');
+
+$test = $t->to_array();
+$result = count($test[0]['stats']['failed']);
+exit($result > 0 ? 1 : 0);
 //$t->ok('isEmpty' == 'isEmpty1', 'isEmpty');
