@@ -50,7 +50,7 @@ $rps->setComputerHand($rps->HANDS[0]);
 $t->is($rps->judge(), -1,'judgeの利用-payer:scissor computer:rock');
 $rps->setPlayerHand($rps->HANDS[2]);
 $rps->setComputerHand($rps->HANDS[1]);
-$t->is($rps->judge(), 100,'judgeの利用-payer:scissor computer:paper');
+$t->is($rps->judge(), 1,'judgeの利用-payer:scissor computer:paper');
 $rps->setPlayerHand($rps->HANDS[2]);
 $rps->setComputerHand($rps->HANDS[2]);
 $t->is($rps->judge(), 0,'judgeの利用-payer:scissor computer:scissor');
